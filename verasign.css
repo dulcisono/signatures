@@ -2,7 +2,7 @@
 
 .verita{
   width:240px;
-  height:240px;
+  height:210px;
   box-sizing:border-box;
   position:relative;
   display:flex;
@@ -18,14 +18,14 @@
 
 .veraimg{
   width:210px;
-  height:210px;
+  height:180px;
   position:relative;
   overflow:hidden;
 }
 
 .veraimg img{
   width:210px;
-  height:210px;
+  height:180px;
   position:absolute;
   top:0;
   left:0;
@@ -100,11 +100,11 @@
 }
 
 .verabefore-top{
-  top:3.5px;
+  top:4px;
 }
 
 .verabefore-bottom{
-  bottom:2.5px;
+  bottom:3px;
 }
 
 .verita:hover .verabefore-top{
@@ -119,10 +119,10 @@
 
 .veracirculo{
   position:absolute;
-  top:52%;
+  top:54%;
   left:50%;
-  width:210px;
-  height:210px;
+  width:200px;
+  height:200px;
   transform:translate(-50%,-50%);
   overflow:visible;
   z-index:6;
