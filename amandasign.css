@@ -13,7 +13,7 @@
 }
 
 .mandy:hover{
-  border-color:#404736;
+  border-color:#606757;
   border-radius: 10px;
 }
 
@@ -47,7 +47,7 @@
   position:absolute;
   width:210px;
   text-align:center;
-  color:#9e9e9e;
+  color:#c4c4c4;
   font-family:'Fathan',sans-serif;
   font-size:8px;
   line-height:8px;
