@@ -37,13 +37,13 @@
 }
 
 .texture{
-  width:300px;
+  width:280px;
   height:197px;
   position:absolute;
   top:50%;
   left:50%;
   transform:translate(-50%,-50%);
-  background-image:url(https://i.pinimg.com/736x/14/6f/e9/146fe9844be37410ca86af1c8009b411.jpg);
+  background-image:url(https://i.imgur.com/zhtCKxE.jpeg);
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
