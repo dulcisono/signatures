@@ -136,7 +136,7 @@
   transition-delay:.75s;
 }
 
-.line{
+.eveline{
   width:149px;
   height:0.5px;
   position:absolute;
@@ -150,7 +150,7 @@
   z-index:4;
 }
 
-.eve:hover .line{
+.eve:hover .eveline{
   opacity:1;
   transform:translateY(0);
   transition-delay:.75s;
