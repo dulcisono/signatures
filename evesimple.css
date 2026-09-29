@@ -52,6 +52,7 @@
   z-index:2;
   pointer-events:none;
   border-radius:10px;
+  clip-path:inset(0 round 10px);
   transition:opacity .5s ease;
 }
 
@@ -130,7 +131,7 @@
 }
 
 .eve:hover .evesub{
-  opacity:50;
+  opacity:1;
   transform:translateY(0);
   transition-delay:.75s;
 }
@@ -145,13 +146,12 @@
   transform:translateY(8px);
   border-top:1px dotted #808080;
   opacity:0;
-  transform:translateY(8px);
   transition:opacity .5s ease, transform .6s ease;
   z-index:4;
 }
 
 .eve:hover .line{
-  opacity:50;
+  opacity:1;
   transform:translateY(0);
   transition-delay:.75s;
 }
