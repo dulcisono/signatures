@@ -32,8 +32,6 @@
   width:100%;
   height:100%;
   object-fit:cover;
-  filter:brightness(70%) contrast(1);
-  transition:all 1.5s ease-out;
 }
 
 .texture{
@@ -53,18 +51,17 @@
   pointer-events:none;
   border-radius:10px;
   clip-path:inset(0 round 10px);
-  transition:opacity .5s ease;
+  transition:opacity .3s ease-out;
 }
 
-.eve:hover .eveimg{
-  filter:grayscale(100%) brightness(0.9);
-  transition:all .75s ease-out;
+.eve:hover .eveimg img{
+  filter:grayscale(100%) brightness(90%);
+  transition:filter 2s ease-in-out;
 }
 
 .eve:hover .texture{
   opacity:.09;
-  transition:opacity .5s ease;
-  transition-delay:.75s;
+  transition:opacity 1.5s ease-in-out;
 }
 
 .evetop,
@@ -99,13 +96,13 @@
 .eve:hover .evetop{
   opacity:1;
   transform:translateY(0);
-  transition-delay:.75s;
+  transition-delay:.50s;
 }
 
 .eve:hover .evebottom{
   opacity:1;
   transform:translateY(0);
-  transition-delay:.75s;
+  transition-delay:.50s;
 }
 
 .evesub{
