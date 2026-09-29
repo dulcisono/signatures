@@ -27,7 +27,7 @@
   overflow:hidden;
   object-fit:cover;
   display:block; 
-  filter: grayscale(100%) brightness(.60) contrast(1.2);
+  filter: grayscale(100%) brightness(.50) contrast(.90);
   transition: 1s ease;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .mandy:hover .mandyimg{
-  filter: grayscale(100%) brightness(.3) contrast(1.1);
+  filter: grayscale(100%) brightness(.2) contrast(1);
   transition: 2s ease;
 }
 
