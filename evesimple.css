@@ -34,7 +34,7 @@
   object-fit:cover;
 }
 
-.texture{
+.evetexture{
   width:280px;
   height:197px;
   position:absolute;
@@ -55,13 +55,13 @@
   transition:all ease-in-out 1s;
 }
 
-.eve:hover .texture{
+.eve:hover .evetexture{
   opacity:.05;
   transition:.5s ease;
   transition-delay:.75s;
 }
 
-.textureb{
+.evetextureb{
   width:0;
   height:100%;
   background:#856161;
@@ -75,7 +75,7 @@
   transition:width 1s ease-in-out;
 }
 
-.eve:hover .textureb{
+.eve:hover .evetextureb{
   width:100%;
 }
 
@@ -148,7 +148,7 @@
   transition-delay:.75s;
 }
 
-.line{
+.eveline{
   width:149px;
   height:0.5px;
   position:absolute;
@@ -162,18 +162,18 @@
   z-index:4;
 }
 
-.eve:hover .line{
+.eve:hover .eveline{
   opacity:1;
   transform:translateY(0);
   transition-delay:.75s;
 }
 
-.blink{
+.eveblink{
   animation:none;
   z-index:5;
 }
 
-.eve:hover .blink{
+.eve:hover .eveblink{
   animation:motelblink 4s infinite;
 }
 
