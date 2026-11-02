@@ -1,17 +1,9 @@
-@import url('https://fonts.cdnfonts.com/css/bochan-serif');
-@import url('https://fonts.cdnfonts.com/css/noto-serif-sinhala');
-@import url('https://namistuff.github.io/gameicons-font/css/game-icons.css');
-
 :root{
   --corte: #3E5A8C;
   --aristocracia: #E9D3DC;
   --burgueses: #A38A6C;
   --bohemia: #7B5233;
   --plebeyos: #5A6B7C;
-}
-
-.love, .love *{
-  box-sizing:border-box;
 }
 
 .love{
@@ -31,82 +23,63 @@
   border-image: linear-gradient(135deg, var(--aristocracia), var(--burgueses), var(--aristocracia)) 1;
 }
 
-.loveimg{
-  flex:0 0 220px;
+.loveimg {
   width:220px;
   height:220px;
   overflow:hidden;
   border:1px solid var(--burgueses);
+  transition: 2s ease;
 }
 
 .loveimg img{
-  display:block;
+  object-fit:cover;
   width:100%;
   height:100%;
-  max-width:none;
-  margin:0;
-  padding:0;
-  border:0;
-  object-fit:cover;
-  transform-origin:center center;
-  transform:translateZ(0) scale(1) rotate(0.001deg);
-  will-change:transform;
-  backface-visibility:hidden;
-  transition:transform 2s ease, filter 2s ease;
+  transition: 2s ease;
 }
 
 .love:hover img{
-  transform:translateZ(0) scale(1.2) rotate(0.001deg);
-  filter:blur(1px) brightness(0.7);
-  transition-delay:.3s;
+  transform: scale(1.20);
+  filter: blur(1px) brightness(0.7);
+  transition: 2s ease;
+  transition-delay: 0.3s;
 }
 
-.love .elititle{
+.love elititulo{
   position:absolute;
   top:50%;
   left:50%;
   transform:translate(-50%, -50%);
   z-index:2;
-  display:block;
-  width:max-content;
   font-size:20px;
-  line-height:1.1;
-  color:#c2c2c2;
-  font-family:'Bochan Serif', serif;
+  color: #c2c2c2;
+  font-family: 'Bochan Serif', sans-serif;
   text-align:center;
-  text-transform:uppercase;
   opacity:0;
   pointer-events:none;
-  transition:opacity .2s ease;
+  transition: all .2s ease;
 }
 
-.love .elititle .linea{
-  display:block;
-}
-
-.love .subt{
-  display:block;
-  margin-bottom:4px;
-  text-transform:uppercase;
-  font-weight:600;
-  font-size:8px;
-  line-height:1.2;
-  font-family:'Noto Serif Sinhala', serif;
-  background:linear-gradient(135deg, var(--aristocracia), var(--burgueses), var(--aristocracia));
-  -webkit-background-clip:text;
-  background-clip:text;
-  -webkit-text-fill-color:transparent;
-  color:transparent;
-}
-
-.love .bold{
+.love bold{
   color:var(--burgueses);
-  font-weight:600;
+  font-weight: 600;
 }
 
-.love:hover .elititle{
+.love subt{
+  text-transform:uppercase;
+  font-weight: 600;
+  font-size:8px;
+  font-family: 'Noto Serif Sinhala', sans-serif;
+  background: linear-gradient(135deg, var(--aristocracia), var(--burgueses), var(--aristocracia));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.love:hover elititulo{
   opacity:1;
-  transition:opacity 1.5s ease;
+  transition: all 1.5s ease;
   transition-delay:2s;
 }
 
@@ -118,7 +91,7 @@
   z-index:4;
   pointer-events:none;
   opacity:0;
-  transition:opacity .2s ease;
+  transition:all .2s ease;
   filter:drop-shadow(1px 1px 1px var(--bohemia));
 }
 
