@@ -6,102 +6,127 @@
   --plebeyos: #5A6B7C;
 }
 
-.love{
+.elisig, .elisig *{
+  box-sizing:border-box;
+}
+
+.elisig{
   position:relative;
-  width:250px;
-  height:250px;
+  width:230px;
+  height:230px;
+  margin:30px auto;
+  outline:1px solid var(--burgueses);
+  outline-offset:15px;
   overflow:hidden;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border:1px solid;
-  border-image: linear-gradient(135deg, var(--burgueses), var(--aristocracia), var(--burgueses)) 1;
-  transition: 1.5s ease;
+  transition:1.5s ease;
 }
 
-.love:hover{
-  border-image: linear-gradient(135deg, var(--aristocracia), var(--burgueses), var(--aristocracia)) 1;
-}
-
-.loveimg {
-  width:220px;
-  height:220px;
+.loveimg{
+  width:230px;
+  height:230px;
   overflow:hidden;
-  border:1px solid var(--burgueses);
-  transition: 2s ease;
+  border:1.5px solid var(--burgueses);
 }
 
 .loveimg img{
+  display:block;
   object-fit:cover;
   width:100%;
   height:100%;
-  transition: 2s ease;
+  max-width:none;
+  transform-origin:center center;
+  transform:translateZ(0) scale(1) rotate(0.001deg);
+  will-change:transform;
+  backface-visibility:hidden;
+  transition:transform 2s ease, filter 2s ease;
 }
 
-.love:hover img{
-  transform: scale(1.20);
-  filter: blur(1px) brightness(0.7);
-  transition: 2s ease;
-  transition-delay: 0.3s;
+.elisig:hover img{
+  transform:translateZ(0) scale(1.2) rotate(0.001deg);
+  filter:blur(1px) brightness(0.7);
+  transition-delay:.3s;
 }
 
-.love elititulo{
+.eliqt{
   position:absolute;
-  top:50%;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  pointer-events:none;
+}
+
+.eliqt .elitt,
+.eliqt .subt{
+  position:absolute;
   left:50%;
-  transform:translate(-50%, -50%);
-  z-index:2;
-  font-size:20px;
-  color: #c2c2c2;
-  font-family: 'Bochan Serif', sans-serif;
+  transform:translateX(-50%);
+  width:190px;
   text-align:center;
+  color:#c6c6c6;
+  text-shadow:black 2px 1px;
   opacity:0;
-  pointer-events:none;
-  transition: all .2s ease;
+  transition:opacity .2s ease;
 }
 
-.love bold{
-  color:var(--burgueses);
-  font-weight: 600;
-}
-
-.love subt{
-  text-transform:uppercase;
-  font-weight: 600;
-  font-size:8px;
-  font-family: 'Noto Serif Sinhala', sans-serif;
-  background: linear-gradient(135deg, var(--aristocracia), var(--burgueses), var(--aristocracia));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-}
-
-.love:hover elititulo{
-  opacity:1;
-  transition: all 1.5s ease;
-  transition-delay:2s;
-}
-
-.love .corners{
-  position:absolute;
-  color:#c2c2c2;
-  font-size:14px;
+.eliqt .elitt{
+  top:34%;
+  font-family:'Bochan Serif', serif;
+  font-size:13px;
   line-height:1;
-  z-index:4;
-  pointer-events:none;
+  letter-spacing:1px;
+  white-space:nowrap;
+}
+
+.eliqt .subt{
+  top:57%;
+  font-family:'Noto Serif Sinhala', serif;
+  font-size:8px;
+  line-height:1.3;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  text-align:justify;
+  text-align-last:center;
+}
+
+.eliqt .separador{
+  position:absolute;
+  top:46%;
+  left:50%;
+  transform:translateX(-50%);
+  width:190px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
   opacity:0;
-  transition:all .2s ease;
+  transition:opacity .2s ease;
+}
+
+.eliqt .separador linea{
+  flex:1;
+  height:1px;
+  border:0;
+  background:linear-gradient(90deg, transparent, var(--aristocracia), var(--burgueses), var(--aristocracia), transparent);
+}
+
+.eliqt .separador i{
+  flex:0 0 auto;
+  font-size:16px;
+  line-height:1;
+  color:var(--burgueses);
   filter:drop-shadow(1px 1px 1px var(--bohemia));
 }
 
-.love .top-left{ top:22px; left:22px; }
-.love .top-right{ top:22px; right:22px; }
-.love .bottom-left{ bottom:22px; left:22px; }
-.love .bottom-right{ bottom:22px; right:22px; }
-
-.love:hover .corners{
+.elisig:hover .eliqt .elitt,
+.elisig:hover .eliqt .subt,
+.elisig:hover .eliqt .separador{
   opacity:1;
   transition:opacity 1.5s ease;
-  transition-delay:.75s;
+  transition-delay:2s;
+}
+
+.elisig bold{
+  color:var(--burgueses);
+  font-weight:600;
 }
