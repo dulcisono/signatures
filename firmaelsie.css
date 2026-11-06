@@ -12,8 +12,8 @@
 
 .elisig{
   position:relative;
-  width:225px;
-  height:225px;
+  width:200px;
+  height:200px;
   margin:30px auto;
   outline:1px solid var(--burgueses);
   outline-offset:15px;
@@ -23,9 +23,10 @@
 }
 
 .loveimg{
-  width:225px;
-  height:225px;
+  width:200px;
+  height:200px;
   overflow:hidden;
+  border-radius:50%;
   border:1.5px solid var(--burgueses);
 }
 
@@ -75,7 +76,7 @@
 .eliqt .elitt{
   top:34%;
   font-family:'Bochan Serif', serif;
-  font-size:12px;
+  font-size:10px;
   line-height:0.7;
   letter-spacing:1px;
   white-space:nowrap;
@@ -85,8 +86,8 @@
 .eliqt .subt{
   top:57%;
   font-family:'Noto Serif Sinhala', serif;
-  font-size:8px;
-  line-height:1.3;
+  font-size:6px;
+  line-height:0.7;
   letter-spacing:2px;
   text-transform:uppercase;
   text-align:justify;
