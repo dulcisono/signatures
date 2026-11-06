@@ -12,18 +12,19 @@
 
 .elisig{
   position:relative;
-  width:230px;
-  height:230px;
+  width:225px;
+  height:225px;
   margin:30px auto;
   outline:1px solid var(--burgueses);
   outline-offset:15px;
   overflow:hidden;
+  border-radius:50%;
   transition:1.5s ease;
 }
 
 .loveimg{
-  width:230px;
-  height:230px;
+  width:225px;
+  height:225px;
   overflow:hidden;
   border:1.5px solid var(--burgueses);
 }
@@ -47,6 +48,7 @@
   transition-delay:.3s;
 }
 
+/* Contenedor de textos */
 .eliqt{
   position:absolute;
   top:0;
@@ -69,15 +71,17 @@
   transition:opacity .2s ease;
 }
 
+/* Título */
 .eliqt .elitt{
   top:34%;
   font-family:'Bochan Serif', serif;
-  font-size:13px;
-  line-height:1;
+  font-size:12px;
+  line-height:0.7;
   letter-spacing:1px;
   white-space:nowrap;
 }
 
+/* Subtítulo */
 .eliqt .subt{
   top:57%;
   font-family:'Noto Serif Sinhala', serif;
@@ -89,6 +93,7 @@
   text-align-last:center;
 }
 
+/* Separador */
 .eliqt .separador{
   position:absolute;
   top:46%;
@@ -118,6 +123,7 @@
   filter:drop-shadow(1px 1px 1px var(--bohemia));
 }
 
+/* Hover: aparecen los tres */
 .elisig:hover .eliqt .elitt,
 .elisig:hover .eliqt .subt,
 .elisig:hover .eliqt .separador{
