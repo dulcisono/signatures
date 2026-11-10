@@ -1,6 +1,6 @@
 :root{
   --corte: #3E5A8C;
-  --aristocracia: #E9D3DC;
+  --aristocracia: #B5778F;
   --burgueses: #A38A6C;
   --bohemia: #7B5233;
   --plebeyos: #5A6B7C;
@@ -15,7 +15,7 @@
   width:200px;
   height:200px;
   margin:30px auto;
-  outline:1px solid var(--burgueses);
+  outline:1px solid var(--aristocracia);
   outline-offset:15px;
   overflow:hidden;
   border-radius:50%;
@@ -27,7 +27,7 @@
   height:200px;
   overflow:hidden;
   border-radius:50%;
-  border:1.5px solid var(--burgueses);
+  border:1.5px solid var(--aristocracia);
 }
 
 .loveimg img{
@@ -120,8 +120,8 @@
   flex:0 0 auto;
   font-size:16px;
   line-height:1;
-  color:var(--burgueses);
-  filter:drop-shadow(1px 1px 1px var(--bohemia));
+  color:var(--aristocracia);
+  filter:drop-shadow(1px 1px 1px var(--aristocracia));
 }
 
 /* Hover: aparecen los tres */
@@ -134,6 +134,6 @@
 }
 
 .elisig bold{
-  color:var(--burgueses);
+  color:var(--aristocracia);
   font-weight:600;
 }
