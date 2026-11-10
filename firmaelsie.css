@@ -113,7 +113,7 @@
   flex:1;
   height:1px;
   border:0;
-  background:linear-gradient(90deg, transparent, var(--aristocracia), var(--burgueses), var(--aristocracia), transparent);
+  background:linear-gradient(90deg, transparent, var(--aristocracia), var(--aristocracia), var(--aristocracia), transparent);
 }
 
 .eliqt .separador i{
