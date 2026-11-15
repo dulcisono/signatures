@@ -7,6 +7,8 @@
 
 .annsign, .annsign *{font-style:normal !important;}
 
+.annsign, .annsign *, .annsign *::before, .annsign *::after{border-radius:0 !important;}
+
 .annsign{
   position:relative;
   width:250px;
@@ -114,6 +116,7 @@
   font-weight:700;
   width:120px;
   font-size:10px;
+  line-height:1.4 !important;
   color:#c2c2c2;
   font-family:'Oregon LDO', sans-serif;
   text-align:justify;
